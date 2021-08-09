@@ -66,8 +66,11 @@
 	justify-content: space-around;
 }
 
-.flex-grow {
+.grow {
 	flex-grow: 1;
+}
+.shrink{
+	flex-shrink: 0;
 }
 
 .flex-wrap {

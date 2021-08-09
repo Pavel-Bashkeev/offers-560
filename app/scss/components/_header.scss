@@ -1,0 +1,29 @@
+.header{
+  padding: 10px 0;
+  border-bottom: 1px solid #cfcfcf;
+  background-color:rgba($white, .8);
+}
+.logo{
+  &__img{
+    width: 57px;
+    height: 57px;
+    margin-right: 10px;
+  }
+  &__name{
+    font: $font-middle-medium;
+    &--accent{
+      font:$font-middle-black;
+      color: $blue;
+    }
+  }
+}
+.menu{
+  &__item{
+    &:not(:last-child){
+      margin-right: 38px;
+    }
+  }
+  &__link{
+    font: 500 15px / 18px $font;
+  }
+}

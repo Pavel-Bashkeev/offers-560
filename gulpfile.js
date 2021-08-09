@@ -123,4 +123,4 @@ exports.cleandist = cleandist;
 
 exports.build = series(cleandist, styles, scripts, images, buildcopy);
 
-exports.default = parallel(styles, scripts, browsersync, startwatch);
+exports.default = parallel(imagesSvgSprite, styles, scripts, browsersync, startwatch);
