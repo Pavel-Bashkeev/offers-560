@@ -21,7 +21,7 @@ img {
 body {
 	color: $text-default;
 	font: $font-defult;
-	background-color: $bg;
+	background-color: $white;
 }
 
 .btn-reset {
@@ -54,4 +54,15 @@ body {
 	background: linear-gradient(272.43deg, #EC0909 9.11%, #FF6332 48.33%, #EC0909 85.95%);
 	box-shadow: 0px 8px 20px rgba(6, 41, 60, 0.15);
 	border-radius: 79px;
+}
+.section-styles{
+	padding: 60px 0;
+}
+.section-title{
+	font: $font-title;
+	max-width: 470px;
+	margin: 0 auto;
+	color: $black;
+	margin-bottom: 50px;
+	text-align: center;
 }
