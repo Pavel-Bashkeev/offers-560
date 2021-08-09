@@ -1,0 +1,80 @@
+.hidden {
+	overflow: hidden;
+}
+
+.visible {
+	overflow: visible;
+}
+
+//display--------------------------------------------------------------------------------------------------
+.display-b {
+	display: block;
+}
+
+// gird--------------------------------------------------------------------------------------------------
+.display-grid {
+	display: grid;
+}
+
+.gird-20g {
+	grid-template-columns: repeat(12, 1fr);
+	gap: 20px
+}
+
+.gird-30g {
+	grid-template-columns: repeat(12, 1fr);
+	gap: 30px
+}
+
+.grid-40g {
+	grid-template-columns: repeat(12, 1fr);
+	gap: 40px
+}
+
+//grid--------------------------------------------------------------------------------------------------
+// flex--------------------------------------------------------------------------------------------------
+.display-f {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.items-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.align-stretch {
+	align-items: stretch;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-beetwen {
+	justify-content: space-between;
+}
+
+.justify-around {
+	justify-content: space-around;
+}
+
+.flex-grow {
+	flex-grow: 1;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+// flex--------------------------------------------------------------------------------------------------
+.text-center{
+	text-align: center;
+}
