@@ -12,6 +12,7 @@
     &--accent {
       display: block;
       font: 900 55px/67px $font;
+      text-transform: uppercase;
     }
   }
 
@@ -34,6 +35,9 @@
       width: 36px;
       height: 36px;
       background-image: url('../images/dest/sprite.svg#badge');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
       display: block;
       margin-right: 8px;
     }
@@ -50,17 +54,17 @@
   width: 100%;
   padding-right: 45px;
   width: 100%;
-  background-image: url('../images/dest');
   &__box{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
+    background-image: url('../images/dest/banner-bg.webp');
   }
   &__img {
     width: 125px;
     position: absolute;
-    bottom: 34px;
+    bottom: 50%;
     left: 0;
   }
 }

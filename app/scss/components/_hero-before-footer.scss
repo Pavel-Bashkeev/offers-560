@@ -1,0 +1,38 @@
+.hero-before-footer{
+  background-color: $white-gray;
+  &__logo{
+    display: none;
+    padding: 11px 15px 7px ;
+    background-color: $bg;
+    width: 100%;
+  }
+  &__list{
+    display: none;
+  }
+}
+.form{
+  max-width: 368px;
+  &__input{
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    height: 64px;
+    border-radius: 30px;
+    background-color: $white;
+    border: 2px solid $blue;
+    font: 400 18px / 24px 'Rubik';
+    outline: none;
+    padding: 0 10px;
+    &::placeholder{
+      font: 400 18px / 24px 'Rubik';
+      text-align: center;
+    }
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+  }
+  &__btn{
+    margin: 0 auto;
+    display: block;
+  }
+}

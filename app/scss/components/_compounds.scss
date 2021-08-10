@@ -1,0 +1,54 @@
+.compounds {
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 20px;
+  }
+}
+
+.compound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__box {
+    width: 188px;
+    height: 188px;
+    border: 8px solid $blue;
+    border-radius: 50%;
+    margin-bottom: 55px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 53px;
+      height: 43px;
+      background-image: url('../images/dest/arrowEl.webp');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: translateX(-50%);
+      z-index: -1;
+      bottom: -34px;
+    }
+  }
+  &__title{
+    padding: 18px 53px 18px 18px;
+    background-color: $blue;
+    border-radius: 10px;
+    color: $white;
+    font: $font-middle-bold;
+    margin-bottom: 13px;
+  }
+  &__descr{
+    padding: 18px;
+    &-text{
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

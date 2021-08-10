@@ -1,0 +1,32 @@
+.video {
+  background-color: $blue;
+  &__title{
+    color: $white;
+  }
+  &__box {
+    max-width: 560px;
+    height: 304px;
+    position: relative;
+    margin: 0 auto;
+
+    &-btn {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: $black;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      cursor: pointer;
+      z-index: 2;
+    }
+    &__btn{
+
+    }
+    .videoplayer {
+      max-width: 560px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

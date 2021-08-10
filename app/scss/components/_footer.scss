@@ -1,0 +1,125 @@
+.footer {
+  padding: 35px 0 40px;
+  color: $white;
+  background-color: #0E4361;
+
+  &__container {
+    margin-bottom: 33px;
+  }
+}
+
+.footer-contacts {
+  margin-right: 67px;
+
+  &__title {
+    margin-bottom: 15px;
+    font: $font-middle-bold;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 32px;
+
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+
+    .footer-comp__num {
+      margin-top: 10px;
+      display: block;
+    }
+
+    &::before {
+      content: '';
+      width: 22px;
+      height: 22px;
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      margin-right: 12px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &.footer-tel {
+      &::before {
+        background-image: url('../images/dest/sprite.svg#phone');
+      }
+    }
+
+    &.footer-addres {
+      &::before {
+        background-image: url('../images/dest/sprite.svg#geo');
+      }
+    }
+
+    &.footer-comp {
+      &::before {
+        background-image: url('../images/dest/sprite.svg#home');
+      }
+    }
+  }
+}
+
+.map {
+  &-wrapper {
+    max-width: 538px;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font: $font-middle-bold;
+    text-align: center;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 285px;
+  background-color: $black;
+  background-image: url('../images/dest/mapFake.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+.map__addres {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 96%;
+  margin: 0 auto;
+  background-color: #fff;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 18px 24px;
+  color: $black;
+  font: $font-defult-bold;
+  z-index: 10;
+}
+
+.footer-polit {
+  &__link {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+.ol-attribution.ol-unselectable.ol-control.ol-uncollapsible{
+  display: none;
+}
+.ol-rotate.ol-unselectable.ol-control.ol-hidden{
+  display: none;
+}
+.ol-zoom.ol-unselectable.ol-control{
+  display: none;
+}
