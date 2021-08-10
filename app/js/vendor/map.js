@@ -1,8 +1,8 @@
 var iconFeature = new ol.Feature({
-  geometry: new ol.geom.Point([55.75578791166799, 37.62713998089365]),
-  name: 'Null Island',
-  population: 4000,
-  rainfall: 500
+  geometry: new ol.geom.Point(ol.proj.transform([37.628664, 55.751225], 'EPSG:4326', 'EPSG:3857')),
+  name: 'Moscow',
+  // population: 4000,
+  // rainfall: 500
 });
 
 var iconStyle = new ol.style.Style({
@@ -34,7 +34,7 @@ var map = new ol.Map({
   ],
   target: 'map',
   view: new ol.View({
-    center: ol.proj.transform([lon, lat], 'EPSG:55', 'EPSG:37'),
+    center: ol.proj.transform([37.628664, 55.751225], 'EPSG:4326', 'EPSG:3857'),
     zoom: 12
   })
 });
