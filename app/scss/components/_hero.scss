@@ -66,6 +66,17 @@
     position: absolute;
     bottom: 50%;
     left: 0;
+    &-text{
+      margin-top: -60px;
+      text-align: center;
+      font: 600 10px/12px $font;
+      &::first-letter{
+        text-transform: lowercase;
+      }
+      &--accent{
+        font: $font-middle-semi;
+      }
+    }
   }
 }
 
