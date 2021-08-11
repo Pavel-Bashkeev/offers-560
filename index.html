@@ -70,7 +70,11 @@
 					<div class="hero-banner__box grow">
 					</div>
 					<div class="hero-banner__img">
-						<img class="hero-banner__img-item" src="./images/dest/badge-voz.webp" alt="Рекомендомано ВОЗ">
+						<picture class="hero-banner__img-item">
+							<source srcset="./images/dest/badge-voz.webp" type="image/webp">
+							<source srcset="./images/dest/safari/badge-voz.png" type="image/png">
+							<img src="./images/dest/badge-voz.webp" alt="Рекомендомано ВОЗ">
+						</picture>
 						<p class="hero-banner__img-text">рекомендованно <span class="hero-banner__img-text--accent">ВОЗ</span> </p>
 					</div>
 					<div class="hero-banner__prices banner-prices">
@@ -184,8 +188,10 @@
 				<div class="video__box">
 					<div class="video__box-btn">
 						<svg class='video__btn'>
-							<use xlink:href=images/dest/sprite.svg#playBtn> </use> </svg> </div> <video
-								src="http://media.w3.org/2010/05/sintel/trailer.mp4" class="videoplayer" controls></video>
+							<use xlink:href=images/dest/sprite.svg#playBtn> </use> 
+						</svg> 
+					</div> 
+					<iframe src="https://www.youtube.com/embed/Cos_39UG_qw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
 		</section>
